@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "start": "node index.js data/transactions.json"
+  
   "scripts": {
+    "start": "node index.js data/transactions.json",
     "test": "node --test"
   },
   "keywords": [],

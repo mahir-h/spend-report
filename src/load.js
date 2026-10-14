@@ -21,5 +21,5 @@ if(!Array.isArray(data)){
         throw new Error(`Expected a list of transation`);
 }
 
-return console.log(data);
+return data;
 }

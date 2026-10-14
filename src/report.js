@@ -11,7 +11,7 @@ export function formatMoney(cents){
 // adds total of amount for each category
 export function totalsByCategory(txs){
     return txs.reduce((acc,t) => {
-    acc[t.category] = ((acc[t.category] ?? 0) + toCents(t.amount);
+    acc[t.category] = (acc[t.category] ?? 0) + toCents(t.amount);
     return acc;
     }, {});
 }
@@ -20,7 +20,7 @@ export function totalsByCategory(txs){
 export function totalsByMonth(txs){
     return txs.reduce((acc,t) => {
     const month = t.date.slice(0,7); // so we can get the 2026-10 part and not date
-    acc[month] = (acc[month] ?? 0) + toCents(amount);
+    acc[month] = (acc[month] ?? 0) + toCents(t.amount);
     return acc;
 },{});
 }

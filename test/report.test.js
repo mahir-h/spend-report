@@ -36,6 +36,7 @@ test('rows across two months are split by month',() => {
 test('isValid rejects "abc" and negative amount', () => {
     assert.equal(isValid({date: '2026-08-01', category: 'food', amount: 'abc'}),false);
     assert.equal(isValid({date: '2026-08-01', category: 'food', amount: -5}), false);
+    assert.equal(isValid({date: 'yesterday', category: 'food', amount: 5}), false);
     assert.equal(isValid({date: '2026-08-01', category: 'food', amount: 5}), true);
 });
 

@@ -3,5 +3,5 @@ export function isValid(t){
     const categoryOK = typeof t.category === 'string' && t.category.trim() !== "";
     const amountOK = typeof t.amount === 'number' && Number.isFinite(t.amount) && t.amount > 0 ;
 
-    return dateOK,categoryOK,amountOK;
+    return dateOK && categoryOK && amountOK;
 }
