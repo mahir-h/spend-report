@@ -2,7 +2,7 @@
   "name": "spend-report",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI that reads a JSON file of transactions and prints totals by category and month, top expenses and a monthly average.",
   "main": "index.js",
   
   "scripts": {
@@ -10,6 +10,6 @@
     "test": "node --test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mahir Habibullah (https://github.com/mahir-h)",
   "license": "ISC"
 }

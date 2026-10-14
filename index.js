@@ -35,6 +35,6 @@ try{
     console.log(`\nSkipped ${skipped} invalid row${skipped === 1 ? '': 's'} `);
 
 } catch (err){
-    console.log('Error: ' + err.message);
+    console.error('Error: ' + err.message);
     process.exit(2);
 }

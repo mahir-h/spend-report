@@ -6,7 +6,7 @@ export function loadTransaction(path){
     try{
         text= fs.readFileSync(path,'utf8');
     } catch (err){
-        throw new Error(`Cant read fileL ${path}`);
+        throw new Error(`Cant read file ${path}`);
     }
 
 
@@ -18,7 +18,7 @@ try{
 }
 
 if(!Array.isArray(data)){
-        throw new Error(`Expected a list of transation`);
+        throw new Error(`Expected a list of transaction`);
 }
 
 return data;
