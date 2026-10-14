@@ -35,7 +35,7 @@ export function topExpenses(txs, n= 5){
 export function monthlyAverage(txs){
     if(txs.length === 0 ) return 0; //this avoids 0/0 = NaN
     const byMonth = totalsByMonth(txs);
-    const month = Object.keys(byMonth).length;
+    const months = Object.keys(byMonth).length;
     const total = Object.values(byMonth).reduce((sum,c) => sum + c, 0);
     return Math.round(total/months);
 
